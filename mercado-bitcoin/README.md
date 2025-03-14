@@ -1,5 +1,28 @@
-# Vue 3 + Vite
+Mercado Bitcoin - API e Frontend
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este projeto é dividido em duas partes: Backend(api) e Frontend (mercado-bitcoin). 
+Para rodá-lo corretamente, siga os passos abaixo em cada diretório.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+📂 Estrutura do Projeto
+/
+├── api/  # Backend - API
+└── mercado-bitcoin/  # Frontend
+
+🛠️ Como rodar o projeto
+
+1️⃣ Instalar dependências
+
+Abra um terminal em cada diretório (api/ e mercado-bitcoin/) e execute:
+
+ - npm install
+
+2️⃣ Iniciar os servidores
+
+Após instalar as dependências, execute em cada diretório:
+
+ - npm run dev
+
+🎯 Tecnologias utilizadas
+
+ - Frontend: Vue.js
+ - Backend: Node.js, Express
