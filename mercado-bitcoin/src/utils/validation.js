@@ -29,7 +29,7 @@ export default {
     return regex.test(cnpj)
   },
 
-  isValidPassword(password) {
+  isPasswordValid(password) {
     const regex = /^\S{5,}$/;
     return regex.test(password);
   },

@@ -186,7 +186,7 @@
       document: !showTypePersonFields.value ? validation.isCnpjValid: validation.isCpfValid,
       date: validation.isDateValid,
       phone: validation.isPhoneValid,
-      password: validation.isValidPassword,
+      password: validation.isPasswordValid,
     };
 
     const allFieldsFilled = Object.keys(validateFields).every((field) => newValue[field]);
@@ -200,7 +200,7 @@
     phoneValidation.value = validateFields.phone(newValue.phone);
     passwordValidation.value = validateFields.password(newValue.password);
 
-    const validationEveryField = {
+    const fieldValidationResults = {
       emailValidation: validateFields.email(newValue.email),
       nameValidation: validateFields.name(newValue.name),
       dateValidation: validateFields.date(newValue.date),
@@ -209,7 +209,7 @@
       passwordValidation: validateFields.password(newValue.password),
     };
 
-    const validationReponse = Object.keys(validationEveryField).every((fieldValidation) => validationEveryField[fieldValidation]);
+    const validationReponse = Object.keys(fieldValidationResults).every((fieldValidation) => fieldValidationResults[fieldValidation]);
     
     isDisabled.value = !(allFieldsFilled && validationReponse)
 
